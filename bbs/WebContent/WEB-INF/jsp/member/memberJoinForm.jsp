@@ -6,6 +6,13 @@
 	$(function () {
 		// id check 버튼
 		$('#idCheck').click(function() {
+			
+			if($('#memberId').val() == ""){
+				alert('아이디를 입력하세요!');
+				$('#memberId').focus();
+				return;
+			}
+			
 			$.ajax({// ┌>서블릿 이름
 				url: 'ajaxMemberIdCheck',
 				//	   ┌>이게 파라미터 이름 ┌>form 태그 안에 input id
