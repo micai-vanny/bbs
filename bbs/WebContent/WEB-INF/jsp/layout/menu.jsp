@@ -10,7 +10,7 @@
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav">
 
-			<li class="nav-item"><a class="nav-link" href="noticeList.do">공지사항</a> </li>
+			<li class="nav-item"><a class="nav-link" href="noticeListPaging.do">공지사항</a> </li>
 
 			<li class="nav-item"><a class="nav-link" href="#">자유게시판</a></li>
 
@@ -23,6 +23,14 @@
 			<c:if test="${empty id }">
 				<li class="nav-item"><a class="nav-link" href="memberLoginForm.do">로그인</a></li>
 				<li class="nav-item"><a class="nav-link" href="memberJoinForm.do">회원가입</a></li>
+			</c:if>
+			
+			<!-- 현재 로그인 한 정보 보여주기 -->
+			<c:if test="${empty id }">
+				<li class="nav-item"><a class ="nav-link">Guest 님 접속 중</a></li>
+			</c:if>
+			<c:if test="${!empty id }">
+				<li class="nav-item"><a class ="nav-link">${id } 님 접속 중</a></li>
 			</c:if>
 		</ul>
 	</div>
