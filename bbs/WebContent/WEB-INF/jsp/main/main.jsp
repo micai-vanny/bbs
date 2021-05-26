@@ -5,5 +5,5 @@
 	<h1>Welcome to Dongdong's Home Guest!</h1>
 </c:if>
 <c:if test="${!empty id }">
-	<h1>${id }, Welcome to Dongdong's Home!</h1>
+	<h1>${mname }, Welcome to Dongdong's Home!</h1>
 </c:if>

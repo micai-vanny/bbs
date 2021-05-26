@@ -19,6 +19,7 @@ public class MemberLogin implements DbCommand {
 		String id = request.getParameter("memberId");
 		String pwd = request.getParameter("memberPwd");
 		
+		
 		MemberVO vo = new MemberVO();
 		vo.setId(id);
 		vo.setPwd(pwd);
@@ -33,6 +34,8 @@ public class MemberLogin implements DbCommand {
 		}else {
 			// 로그인 처리 => memberLoginSuccess.jsp
 			session.setAttribute("id", rvo.getId());
+			session.setAttribute("mname", rvo.getName());
+	
 			request.setAttribute("vo", rvo);
 			path = "member/memberLoginSuccess.tiles";
 		}
