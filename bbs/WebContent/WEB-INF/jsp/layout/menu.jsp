@@ -3,7 +3,7 @@
     pageEncoding="UTF-8"%>
     
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	<a class="navbar-brand" href="#">Navbar</a>
+	<a class="navbar-brand" href="main.do">불꽃가능캣</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class="navbar-toggler-icon"></span>
 	</button>
@@ -12,7 +12,7 @@
 
 			<li class="nav-item"><a class="nav-link" href="noticeListPaging.do">공지사항</a> </li>
 
-			<li class="nav-item"><a class="nav-link" href="#">자유게시판</a></li>
+			<li class="nav-item"><a class="nav-link" href="bulletinListPaging.do">자유게시판</a></li>
 
 			<li class="nav-item"><a class="nav-link" href="#">소개하는 글</a></li>
 
