@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>동동 굿즈샵:::</title>
 </head>
 <body>
-	<jsp:forward page="main.do"></jsp:forward>
+	<jsp:forward page="index.do"></jsp:forward>
 </body>
 </html>
